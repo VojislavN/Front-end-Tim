@@ -1,0 +1,72 @@
+body{
+    background-color: rgba(0, 162, 255,0.6);
+color: rgba(59, 84, 99, 0.644);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* ovde pocinje css za navbar */
+nav {
+    overflow: hidden;
+    background-color: rgba(0, 162, 255);
+    
+}
+nav a {
+    float: left;
+    text-decoration: none;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px 22px;
+       
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding:15px 22px;
+    background-color: inherit;
+  }
+  nav a:hover, .dropdown:hover .dropbtn {
+    background-color:rgba(59, 84, 99, 0.644)
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 162, 255,0.8);
+    min-width: 160px;
+  }
+  .dropdown-content a {
+    float: none;
+    color: whitesmoke;
+    padding: 15px 22px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* ovde se zavrsava */
+  .wrapper{
+    margin:auto 20%; 
+  }
+  .wrapper div, h1{
+background-color: whitesmoke;
+border: 1px solid whitesmoke;
+border-radius: 15px;
+padding: 15px;
+margin: 1%;
+  }
+  img{
+width: 100%;
+height: auto;
+border-radius: 15px;
+  }
