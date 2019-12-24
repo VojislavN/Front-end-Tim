@@ -1,60 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="libs/bootstrap/css/bootstrap.min.css"></script>
-    <script src="libs/bootstrap/css/bootstrap-theme.min.css"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>contact</title>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        body {
+            background-color: rgba(207, 217, 223, 0.6);
+            color: rgba(59, 84, 99, 0.644);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+        }
+
+        .wrapper {
+            border: 1px solid white;
+            border-radius: 1em;
+            text-align: center;
+            background: white;
+            margin: auto 20%;
+        }
+
+        .wrapper div,
+        h1 {
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 1%;
+        }
+
+        input {
+            width: 80%;
+            height: 40px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        textarea {
+            width: 80%;
+            border-radius: 1em;
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="Portfolio.html">Portfolio</a>
-        <!-- <a href="portfolio.html">Portfolio</a> -->
-        <!-- umesto iskomentarisanog a taga ide sledeci deo za padajuci meni -->
-        <div class="dropdown">
-            <button class="dropbtn">Destinacije</button>
-            <div class="dropdown-content">
-                <a href="#">Španija</a>
-                <a href="#">Grčka</a>
-                <a href="turska.html">Turska</a>
+    <ul style="
+        background: rgba(0, 162, 255, 0.8); border-bottom: 1px solid rgba(0, 162, 255, 0.8) ;" class="nav nav-tabs"
+        id="navId">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link text-light">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="about.html" class="nav-link text-light">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="portfolio.html" class="nav-link text-light">Portfolio</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button"
+                aria-haspopup="true" aria-expanded="false">Destinacije</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item text-primary" href="spanija.html">Spanija</a>
+                <a class="dropdown-item text-primary" href="grcka.html">Grcka</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-primary" href="turska.html">Turska</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link text-light">Contact</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+    <br>
+    <div class="wrapper">
+        <hr>
+        <h3>Contact Us !</h3>
+        <hr>
+
+        <br>
+        <form action="">
+            <input type="text" placeholder="Your name">
+            <br><br>
+            <input type="email" placeholder="Your E-mail">
+            <br><br>
+            <input type="text" placeholder="Subject">
+            <br><br>
+            <textarea name="nText" id="iText" cols="30" rows="5" placeholder="Your text here:"></textarea>
+            <br><br>
+
+        </form>
+    </div>
+    <br>
+
+    <!-- Ovde Pocinje Footer -->
+    <section id="footer">
+        <br>
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Destinacije</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="spanija.html"><i class="fa fa-angle-double-right"></i>Spanija</a></li>
+                        <li><a href="grcka.html"><i class="fa fa-angle-double-right"></i>Grcka</a></li>
+                        <li><a href="turska.html"><i class="fa fa-angle-double-right"></i>Turska</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Follow us !</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#;"><i class="fa fa-angle-double-right"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Facebook</a></li>
+                        <li><a href="#;"><i class="fa fa-angle-double-right"></i>Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href="#">Lorem ipsum dolor sit</a></u> amet consectetur adipisicing elit. Vitae, ad
+                        voluptas.
+                        Blanditiis neque, laborum autem.
+                    </p>
+                    <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">My
+                            website</a></p>
+                </div>
+                </hr>
             </div>
         </div>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="wrapper">
-        <form action="">
+    </section>
+    <!-- Ovde se zavrsava Footer -->
 
-    
-            <div>
-                <label for="iUrl">unesite email adresu</label>
-                <input  type="email" id="1" name="nUrl" autocomplete="off"><br>
-        
-        
-                <label for="iUrl">ime i prezime</label>
-                <input type="url" id="2" name="nUrl" autocomplete="off"><br>
-        
-               
-            </div>
-                <br>
-                <label for="iUrl"></label>
-                <input type="url" id="3" name="nUrl" autocomplete="off"><br>
-                <br>
-        
-          <textarea name="" id="9" cols="60" rows="10"></textarea>
-        
-        
-        
-            </form>   
-    </div>
-  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
