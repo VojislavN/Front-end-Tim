@@ -12,7 +12,7 @@ section .section-title {
 }
 
 #footer {
-    background: rgba(0, 162, 255, 0.8) !important;
+    background: #009B72 !important;
 }
 
 #footer h5 {
@@ -89,4 +89,5 @@ section .section-title {
 
 hr {
     width: 80%;
+    background: #F26430;
 }

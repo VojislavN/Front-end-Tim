@@ -1,45 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="libs/bootstrap/css/bootstrap.min.css"></script>
-    <script src="libs/bootstrap/css/bootstrap-theme.min.css"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="Portfolio.html">Portfolio</a>
-        <!-- <a href="portfolio.html">Portfolio</a> -->
-        <!-- umesto iskomentarisanog a taga ide sledeci deo za padajuci meni -->
-        <div class="dropdown">
-            <button class="dropbtn">Destinacije</button>
-            <div class="dropdown-content">
-                <a href="#">Španija</a>
-                <a href="#">Grčka</a>
-                <a href="turska.html">Turska</a>
+    <ul style="
+    background: #009B72; border-bottom: 1px solid #009B72 ;" class="nav nav-tabs" id="navId">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link text-light py-3">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="about.html" class="nav-link text-light py-3">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="portfolio.html" class="nav-link text-light py-3">Portfolio</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle py-3 text-light" data-toggle="dropdown" href="#" role="button"
+                aria-haspopup="true" aria-expanded="false">Destinacije</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item text-success" href="spanija.html">Spanija</a>
+                <a class="dropdown-item text-success" href="grcka.html">Grcka</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-success" href="turska.html">Turska</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link py-3 text-light">Contact</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+    <br>
+    <div class="wrapper">
+        <p>
+            <hr>
+            <h3>Hello!</h3>
+            <hr>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo delectus, voluptas <br>
+            dignissimos
+            enim mollitia iure error soluta animi optio eaque impedit iste quo dolores dicta a assumenda odio ab! <br>
+            Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Ex iure eaque, delectus tempore accusamus corporis,<br>
+            esse
+            quidem nesciunt distinctio ipsa quas voluptates dolore dolorum culpa dolor sit suscipit repellat soluta!
+        </p>
+
+    </div>
+    <br>
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <div style="border:none; background: none;" class="wrapper">
+            <hr style="background: #2A2D34; width: 100%;">
+            <h3>Destinatons</h3>
+            <hr style="background: #2A2D34; width: 100%;">
+        </div>
+        <br>
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner text-center" role="listbox">
+            <div class="carousel-item active"><a href="spanija.html">
+                    <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" src="images/spain.jpg" width="70%"
+                        height="650px" alt="First slide"></a>
+            </div>
+            <div class="carousel-item"><a href="grcka.html">
+                    <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" src="images/greece.jpg"
+                        width="70%" height="650px" alt="Second slide"></a>
+            </div>
+            <div class="carousel-item"><a href="turska.html">
+                    <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" src="images/turkey.jpg"
+                        width="70%" height="650px" alt="Third slide"></a>
             </div>
         </div>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="wrapper">
-            <div>ovo je jedan fajl</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consectetur quam ipsum error dolore quasi
-                similique, optio sed architecto fugiat! Rerum ad in consectetur atque sint fuga officiis iusto nulla! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Ad ut iusto voluptatibus repellat facilis cum, nihil
-                accusamus sint distinctio quia eos ipsa, unde at, voluptates saepe corrupti asperiores pariatur minus! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni earum ratione cupiditate accusamus eum sunt
-                optio perspiciatis, a odio omnis quisquam sint, numquam voluptatem rerum dolor, voluptatum veritatis molestiae.
-            </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-  
+    <br>
+    <br>
+    <iframe style="margin: 0 15% 0 15%;" width="70%" height="650px" src="https://www.youtube.com/embed/JYdJrStH9gg"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <br>
+    <br>
+    <!-- Ovde Pocinje Footer -->
+    <section id="footer">
+        <br>
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Destinacije</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="spanija.html"><i class="fa fa-angle-double-right"></i>Spanija</a></li>
+                        <li><a href="grcka.html"><i class="fa fa-angle-double-right"></i>Grcka</a></li>
+                        <li><a href="turska.html"><i class="fa fa-angle-double-right"></i>Turska</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Follow us !</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#;"><i class="fa fa-angle-double-right"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Facebook</a></li>
+                        <li><a href="#;"><i class="fa fa-angle-double-right"></i>Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href="#">Lorem ipsum dolor sit</a></u> amet consectetur adipisicing elit. Vitae, ad
+                        voluptas.
+                        Blanditiis neque, laborum autem.
+                    </p>
+                    <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">My
+                            website</a></p>
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
+    <!-- Ovde se zavrsava Footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
