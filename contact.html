@@ -56,39 +56,40 @@
 </head>
 
 <body>
-    <ul style="
-    background: #009B72; border-bottom: 1px solid #009B72 ;" class="nav nav-tabs" id="navId">
-        <li class="nav-item">
-            <a href="index.html" class="nav-link text-light py-3">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="about.html" class="nav-link text-light py-3">About</a>
-        </li>
-        <li class="nav-item">
-            <a href="portfolio.html" class="nav-link text-light py-3">Portfolio</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle py-3 text-light" data-toggle="dropdown" href="#" role="button"
-                aria-haspopup="true" aria-expanded="false">Destinacije</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item text-success" href="spanija.html">Spanija</a>
-                <a class="dropdown-item text-success" href="grcka.html">Grcka</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-success" href="turska.html">Turska</a>
-            </div>
-        </li>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="
+    background: #009B72; border-bottom: 1px solid #009B72">
+        <a class="navbar-brand" href="#">Travel</a>
+        <button class="navbar-toggler d-lg-none bg-light" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-light py-3">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link text-light py-3">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link text-light py-3">Portfolio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-3 text-light" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Destinacije</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-success" href="spanija.html">Spanija</a>
+                        <a class="dropdown-item text-success" href="grcka.html">Grcka</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-success" href="turska.html">Turska</a>
+                    </div>
+                </li>
 
-        <li class="nav-item">
-            <a href="contact.html" class="nav-link py-3 text-light">Contact</a>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-    </div>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link py-3 text-light">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <script>
         $('#navId a').click(e => {
@@ -114,10 +115,10 @@
                 placeholder="Your text here:" required></textarea>
             <br><br>
             <span>
-                <input type="Submit" value="Submit" style="width: 40%; background: #F26430;"> <input type="reset" name="nreset" id="ireset"
-                    style="width: 40%; background: #6761A8; border-color: #6761A8;"><br><br>
+                <input type="Submit" value="Submit" style="width: 40%; background: #F26430;"> <input type="reset"
+                    name="nreset" id="ireset" style="width: 40%; background: #6761A8; border-color: #6761A8;"><br><br>
             </span>
-            
+
         </form>
     </div>
     <br>
