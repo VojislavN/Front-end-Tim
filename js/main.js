@@ -1,12 +1,7 @@
-//index.html
-/* $('#navId a').click(e => {
-    e.preventDefault();
-    $(this).tab('show');
-}); */
 
-var datum= new Date();
-document.getElementById("dateTime").innerHTML= datum.toLocaleString();
-
-
-// contact.html
+setInterval(function(){
+    var datum= new Date();
+    document.getElementById("dateTime").innerHTML= datum.toLocaleString();
+     }, 1000);
+     
 

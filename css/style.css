@@ -164,3 +164,18 @@ hr {
     height: 300px;
   }
 }
+
+@media screen and (max-width: 1920px) {
+
+#logo {
+display: none;
+}
+
+}
+
+.cTime{
+  color: white;
+   margin-top:10px;
+}
+
+/* style="color: white; margin-top:10px;" */
