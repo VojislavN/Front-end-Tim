@@ -2,25 +2,22 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <style>
-        body {
-            background-color: rgba(207, 217, 223, 0.6);
-            color: rgba(59, 84, 99, 0.644);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-        }
-
         .wrapper {
-            border: 1px solid white;
+            border: 1px solid #009B72;
             border-radius: 1em;
             text-align: center;
-            background: white;
+            background: #2A2D34;
             margin: auto 20%;
+            color: white;
         }
 
         .wrapper div,
@@ -38,6 +35,14 @@
             border-top: none;
             border-left: none;
             border-right: none;
+            border-radius: 0.3em;
+            border-color: #F26430;
+            background: #2A2D34;
+            color: white;
+        }
+
+        ::placeholder {
+            color: white;
         }
 
         textarea {
@@ -45,36 +50,36 @@
             border-radius: 1em;
             padding-top: 10px;
             padding-left: 5px;
+            border-color: #F26430;
         }
     </style>
 </head>
 
 <body>
     <ul style="
-        background: rgba(0, 162, 255, 0.8); border-bottom: 1px solid rgba(0, 162, 255, 0.8) ;" class="nav nav-tabs"
-        id="navId">
+    background: #009B72; border-bottom: 1px solid #009B72 ;" class="nav nav-tabs" id="navId">
         <li class="nav-item">
-            <a href="index.html" class="nav-link text-light">Home</a>
+            <a href="index.html" class="nav-link text-light py-3">Home</a>
         </li>
         <li class="nav-item">
-            <a href="about.html" class="nav-link text-light">About</a>
+            <a href="about.html" class="nav-link text-light py-3">About</a>
         </li>
         <li class="nav-item">
-            <a href="portfolio.html" class="nav-link text-light">Portfolio</a>
+            <a href="portfolio.html" class="nav-link text-light py-3">Portfolio</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button"
+            <a class="nav-link dropdown-toggle py-3 text-light" data-toggle="dropdown" href="#" role="button"
                 aria-haspopup="true" aria-expanded="false">Destinacije</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item text-primary" href="spanija.html">Spanija</a>
-                <a class="dropdown-item text-primary" href="grcka.html">Grcka</a>
+                <a class="dropdown-item text-success" href="spanija.html">Spanija</a>
+                <a class="dropdown-item text-success" href="grcka.html">Grcka</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-primary" href="turska.html">Turska</a>
+                <a class="dropdown-item text-success" href="turska.html">Turska</a>
             </div>
         </li>
 
         <li class="nav-item">
-            <a href="contact.html" class="nav-link text-light">Contact</a>
+            <a href="contact.html" class="nav-link py-3 text-light">Contact</a>
         </li>
     </ul>
     <div class="tab-content">
@@ -98,16 +103,21 @@
         <hr>
 
         <br>
-        <form action="">
-            <input type="text" placeholder="Your name">
+        <form action="/action_page.php" method="GET">
+            <input type="text" placeholder="Your name" name="nname" required>
             <br><br>
-            <input type="email" placeholder="Your E-mail">
+            <input type="email" placeholder="Your E-mail" name="nmail" required>
             <br><br>
-            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Subject" name="nsubject" required>
             <br><br>
-            <textarea name="nText" id="iText" cols="30" rows="5" placeholder="Your text here:"></textarea>
+            <textarea name="nText" id="iText" minlength="25" maxlength="150" cols="30" rows="5"
+                placeholder="Your text here:" required></textarea>
             <br><br>
-
+            <span>
+                <input type="Submit" value="Submit" style="width: 40%; background: #F26430;"> <input type="reset" name="nreset" id="ireset"
+                    style="width: 40%; background: #6761A8; border-color: #6761A8;"><br><br>
+            </span>
+            
         </form>
     </div>
     <br>
