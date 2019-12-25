@@ -10,49 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <style>
-        .wrapper {
-            border: 1px solid #009B72;
-            border-radius: 1em;
-            text-align: center;
-            background: #2A2D34;
-            margin: auto 20%;
-            color: white;
-        }
-
-        .wrapper div,
-        h1 {
-            background-color: whitesmoke;
-            border: 1px solid whitesmoke;
-            border-radius: 15px;
-            padding: 15px;
-            margin: 1%;
-        }
-
-        input {
-            width: 80%;
-            height: 40px;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            border-radius: 0.3em;
-            border-color: #F26430;
-            background: #2A2D34;
-            color: white;
-        }
-
-        ::placeholder {
-            color: white;
-        }
-
-        textarea {
-            width: 80%;
-            border-radius: 1em;
-            padding-top: 10px;
-            padding-left: 5px;
-            border-color: #F26430;
-        }
-    </style>
+ 
 </head>
 
 <body>
@@ -88,21 +46,10 @@
                     <a href="contact.html" class="nav-link py-3 text-light">Contact</a>
                 </li>
             </ul>
-            <p style="color: white; margin-top:10px;">Date and Time: <span id="datetime"></span></p>
+            <p style="color: white; margin-top:10px;">Date and Time: <span id="dateTime"></span></p>
         </div>
     </nav>
-
-    <script>
-        $('#navId a').click(e => {
-            e.preventDefault();
-            $(this).tab('show');
-        });
-    </script>
-
-    <script>
-        var dt = new Date();
-        document.getElementById("datetime").innerHTML = dt.toLocaleString();
-    </script>
+  
     <br>
     <div class="wrapper">
         <hr>
@@ -111,11 +58,11 @@
 
         <br>
         <form action="/action_page.php" method="GET">
-            <input type="text" placeholder="Your name" name="nname" required>
+            <input class="inputStil"type="text" placeholder="Your name" name="nname" required>
             <br><br>
-            <input type="email" placeholder="Your E-mail" name="nmail" required>
+            <input class="inputStil"type="email" placeholder="Your E-mail" name="nmail" required>
             <br><br>
-            <input type="text" placeholder="Subject" name="nsubject" required>
+            <input class="inputStil"type="text" placeholder="Subject" name="nsubject" required>
             <br><br>
             <textarea name="nText" id="iText" minlength="25" maxlength="150" cols="30" rows="5"
                 placeholder="Your text here:" required></textarea>
@@ -189,12 +136,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
