@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <style>
         .wrapper {
             border: 1px solid #009B72;
@@ -101,16 +103,21 @@
         <hr>
 
         <br>
-        <form action="">
-            <input type="text" placeholder="Your name">
+        <form action="/action_page.php" method="GET">
+            <input type="text" placeholder="Your name" name="nname" required>
             <br><br>
-            <input type="email" placeholder="Your E-mail">
+            <input type="email" placeholder="Your E-mail" name="nmail" required>
             <br><br>
-            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Subject" name="nsubject" required>
             <br><br>
-            <textarea name="nText" id="iText" cols="30" rows="5" placeholder="Your text here:"></textarea>
+            <textarea name="nText" id="iText" minlength="25" maxlength="150" cols="30" rows="5"
+                placeholder="Your text here:" required></textarea>
             <br><br>
-
+            <span>
+                <input type="Submit" value="Submit" style="width: 40%; background: #F26430;"> <input type="reset" name="nreset" id="ireset"
+                    style="width: 40%; background: #6761A8; border-color: #6761A8;"><br><br>
+            </span>
+            
         </form>
     </div>
     <br>

@@ -4,6 +4,10 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
 .wrapper {
   border: 1px solid #009B72;
   border-radius: 1em;
@@ -13,15 +17,7 @@ body {
   color: white;
 }
 
-.wrapper div, h1 {
-  background-color: whitesmoke;
-  border: 1px solid whitesmoke;
-  border-radius: 15px;
-  padding: 15px;
-  margin: 1%;
-}
-
-h3{
+h3 {
   text-align: center;
 }
 
@@ -129,10 +125,10 @@ section .section-title {
 
 @media (max-width:767px) {
   #footer h5 {
-      padding-left: 0;
-      border-left: transparent;
-      padding-bottom: 0px;
-      margin-bottom: 10px;
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
   }
 }
 
@@ -141,4 +137,23 @@ section .section-title {
 hr {
   width: 80%;
   background: #F26430;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+
+#row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
