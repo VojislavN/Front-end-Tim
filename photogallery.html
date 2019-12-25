@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Turska</title>
+    <title>Photo Galery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -44,6 +44,7 @@
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link py-3 text-light">Contact</a>
                 </li>
+
             </ul>
             <p style="color: white; margin-top:10px;">Date and Time: <span id="datetime"></span></p>
         </div>
@@ -55,71 +56,43 @@
             $(this).tab('show');
         });
     </script>
-
+    <br>
     <script>
         var dt = new Date();
         document.getElementById("datetime").innerHTML = dt.toLocaleString();
     </script>
     <br>
-    <div class="wrapper">
-        <p>
-            <hr>
-            <h3>Hello!</h3>
-            <hr>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo delectus, voluptas <br>
-            dignissimos
-            enim mollitia iure error soluta animi optio eaque impedit iste quo dolores dicta a assumenda odio ab! <br>
-            Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Ex iure eaque, delectus tempore accusamus corporis,<br>
-            esse
-            quidem nesciunt distinctio ipsa quas voluptates dolore dolorum culpa dolor sit suscipit repellat soluta!
-        </p>
-
-    </div>
-    <br>
-    <div id="carouselId" class="carousel slide" data-ride="carousel">
-        <div style="border:none; background: none;" class="wrapper">
-            <hr style="background: #2A2D34; width: 100%;">
-            <h3>Destinatons</h3>
-            <hr style="background: #2A2D34; width: 100%;">
+    <div class="container">
+        <hr style="background: #2A2D34; width: 100%;">
+        <h3>Spain</h3>
+        <hr style="background: #2A2D34; width: 100%;">
+        <br>
+        <div class="row">
+            <img class="col-sm-4" src="images/spain.jpg" alt="">
+            <img class="col-sm-4" src="images/spain2.jpg" alt="">
+            <img class="col-sm-4" src="images/spain3.jpg" alt="">
         </div>
         <br>
-
-        <ol class="carousel-indicators">
-            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselId" data-slide-to="1"></li>
-            <li data-target="#carouselId" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner text-center" role="listbox">
-            <div class="carousel-item active"><a href="spanija.html">
-                    <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" src="images/spain.jpg" width="70%"
-                        height="650px" alt="First slide"></a>
-            </div>
-            <div class="carousel-item"><a href="grcka.html">
-                    <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" src="images/greece.jpg"
-                        width="70%" height="650px" alt="Second slide"></a>
-            </div>
-            <div class="carousel-item"><a href="turska.html">
-                    <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" src="images/turkey.jpg"
-                        width="70%" height="650px" alt="Third slide"></a>
-            </div>
+        <hr style="background: #2A2D34; width: 100%;">
+        <h3>Greece</h3>
+        <hr style="background: #2A2D34; width: 100%;">
+        <br>
+        <div class="row">
+            <img class="col-sm-4" src="images/greece.jpg" alt="">
+            <img class="col-sm-4" src="images/greece2.jpg" alt="">
+            <img class="col-sm-4" src="images/greece3.jpg" alt="">
         </div>
-        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <br>
+        <hr style="background: #2A2D34; width: 100%;">
+        <h3>Turkey</h3>
+        <hr style="background: #2A2D34;width: 100%; ">
+        <br>
+        <div class="row">
+            <img class="col-sm-4" src="images/turkey.jpg" alt="">
+            <img class="col-sm-4" src="images/turkey2.jpg" alt="">
+            <img class="col-sm-4" src="images/turkey3.jpg" alt="">
+        </div>
     </div>
-    <br>
-    <br>
-    <iframe style="margin: 0 15% 0 15%;" width="70%" height="650px" src="https://www.youtube.com/embed/JYdJrStH9gg"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    <br>
     <br>
     <!-- Ovde Pocinje Footer -->
     <section id="footer">

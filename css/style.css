@@ -144,6 +144,7 @@ hr {
   width: 50%;
 }
 
+
 /* Clear floats after the columns */
 
 #row:after {
@@ -155,5 +156,11 @@ hr {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+  img {
+    height: 300px;
+  }
+  iframe {
+    height: 300px;
   }
 }

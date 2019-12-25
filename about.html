@@ -28,7 +28,7 @@
                     <a href="about.html" class="nav-link text-light py-3">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link text-light py-3">Portfolio</a>
+                    <a href="photogallery.html" class="nav-link text-light py-3">Photo Gallery</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle py-3 text-light" data-toggle="dropdown" href="#" role="button"
@@ -45,6 +45,7 @@
                     <a href="contact.html" class="nav-link py-3 text-light">Contact</a>
                 </li>
             </ul>
+            <p style="color: white; margin-top:10px;">Date and Time: <span id="datetime"></span></p>
         </div>
     </nav>
 
@@ -54,13 +55,20 @@
             $(this).tab('show');
         });
     </script>
+
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
     <br>
     <br><br>
     <div class="wrapper">
         <br>
         <div id="row">
             <div class="column">
+                <hr>
                 <h3>Who we are</h3>
+                <hr>
                 <br>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dicta optio, quae architecto
                     corporis
@@ -69,7 +77,9 @@
                     quasi fugit eius.</p>
             </div>
             <div class="column">
+                <hr>
                 <h3>What we do</h3>
+                <hr>
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maiores inventore, sit harum eaque
                     deserunt
